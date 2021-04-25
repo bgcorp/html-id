@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Инфо о выпускнике</title>
+    <style>
+      body {
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #2c3e50;
+      }
+
+      #app {
+        width: 100%;
+        max-width: 660px;
+        margin: 0 auto;
+        margin-top: 40px;
+        font-size: 1.3rem;
+      }
+
+      .title {
+        background: linear-gradient(
+          140deg,
+          #e0afe1 0,
+          #b88bd1 14%,
+          #6949ae 50%,
+          #7476c6 79%,
+          #c7d1ed 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      #main {
+        padding: 15px;
+      }
+
+      .pb-10 {
+        padding-bottom: 10px;
+      }
+
+      .pb-15 {
+        padding-bottom: 15px;
+      }
+
+      .name {
+        font-size: 2.2rem;
+        text-align: center;
+        padding-bottom: 30px;
+      }
+
+      .info {
+        padding: 5px;
+      }
+      .group {
+        padding-bottom: 15px;
+      }
+
+      .item {
+        padding-bottom: 10px;
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 1rem;
+        padding-top: 20px;
+        color: #777;
+      }
+
+      .text-gray {
+        color: #777;
+      }
+
+      .mt-20 {
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <!-- <h1 class="title mt-20">Выпускник с таким баркодом не найден</h1> -->
+      <h1 class="title">Информация о выпускнике</h1>
+      <section id="main">
+        <div class="name">Тестов Тест Тестович</div>
+        <div class="info">
+          <div class="group">
+            <div class="item">
+              <strong class="text-gray">Специальность:</strong> Маркетинг
+            </div>
+            <div class="item">
+              <strong class="text-gray">Код специальности:</strong> 5B121212
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="item">
+              <strong class="text-gray">Номер диплома:</strong> 1A29ASS
+            </div>
+            <div class="item">
+              <strong class="text-gray">Год окончания:</strong> 2019
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="item">
+              <strong class="text-gray">Баркод:</strong> 1710010
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="footer">UIB 2021</div>
+    </div>
+
+    <script>
+      console.log(window.location.href)
+      var ret = window.location.href.replace(
+        'file:///D:/workspace/projects/iduibkz/index.html?',
+        ''
+      )
+      console.log(ret)
+    </script>
+  </body>
+</html>
